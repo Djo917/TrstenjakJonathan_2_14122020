@@ -1,7 +1,7 @@
 @font-face {
 	font-family : 'police_raleway';
-	src: url(/police_Raleway/Raleway-Italic-VariableFont_wght.ttf),
-		 url(/police_Raleway/Raleway-Italic-VariableFont_wght.ttf);	 
+	src: url(/font/Raleway-VariableFont_wght.ttf),
+		 url(/font/Raleway-Italic-VariableFont_wght.ttf);	 
 }
 
 body
