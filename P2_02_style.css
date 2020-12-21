@@ -8,3 +8,67 @@ body
 {
     font-family: 'police_raleway';
 }
+
+
+/* Filtres */
+
+i
+{
+	background-color: #DEEBFF;
+	border: solid 5px #DEEBFF;
+	border-radius: 20px;
+	height: 10%;
+	color:#0065FC;
+	margin-right: 7px;
+}
+
+aside
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	
+}
+
+aside h2
+{
+	font-size: 20px;
+	font-style: bold;
+	padding-right: 1%;
+}
+
+aside p
+{
+	border: solid 2px #F2F2F2;
+	border-radius: 25px;
+	padding-right: 1.5%;
+	margin: 7px;
+}
+
+
+
+
+
+
+/* Pied de page */
+
+footer
+{
+	display: flex;
+	justify-content: space-around;
+	background-color: #F2F2F2;
+	width: 100%;
+	margin: auto;
+}
+
+ul h2
+{
+	font-size: 20px;
+}
+
+ul a
+{
+	text-decoration: none;
+	color: black;
+}
+
