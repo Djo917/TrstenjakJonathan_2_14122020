@@ -52,6 +52,54 @@ header h1
 	font-size: 20px;
 	font-weight: bold;
 }
+
+/* Formulaire */
+
+form
+{
+	display: flex;
+	align-items: center;
+}
+
+.fa-map-marker-alt
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: solid 0.5px;
+	height: 34px;
+	width: 33px;
+	padding: auto;
+	border-radius: 10px 0px 0px 10px;
+	background-color: #F2F2F2;
+	border-color: #F2F2F2;
+}
+
+.champ
+{
+	width: 175px;
+	height: 35px;
+	border: solid 0.5px;
+	border-top-color: #F2F2F2;
+	border-bottom-color: #F2F2F2;
+	border-right-color: white;
+	border-left-color: white;
+	font-family: 'police_raileway';
+	font-weight: bold;
+	padding-left: 5px;
+}
+
+.bouton
+{
+	border: solid 0.5px white;
+	border-radius: 0px 10px 10px 0px;
+	background-color: #0065FC;
+	font-family: 'police_raileway';
+	color: white;
+	height: 36px;
+	padding: auto;
+	width: 100px;
+}
 /* Filtres */
 
 aside i
