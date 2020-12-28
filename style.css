@@ -452,9 +452,10 @@ form
 }
 /* Filtres */
 
-aside i
+.filtres_logo
 {
-	background-color: #DEEBFF;
+  display: flex;
+  background-color: #DEEBFF;
 	border: solid 5px #DEEBFF;
 	border-radius: 20px;
 	height: 10%;
@@ -471,11 +472,11 @@ aside
 	
 }
 
-aside h2
+.titre_filtres
 {
 	font-size: 20px;
 	font-style: bold;
-	padding-right: 1%;
+  padding-right: 1%;
 }
 
 aside p
@@ -531,6 +532,13 @@ aside p
 	margin-right: 10px;
 }
 
+/* Bloc hebergements et populaires */
+
+.bloc_hebergements_populaires
+{
+  display: flex;
+}
+
 /* Section Hébergements */
 
 
@@ -539,21 +547,21 @@ aside p
 	display: flex;
   flex-direction: column;
 	background-color: #F2F2F2;
-	border-radius: 1.2em;
   width: 50%;
-  height: 42em;
+  height: 35em;
+  border-radius: 1em 1em 0em 0em;
   padding-left: 1.5em;
 }
 
 .toutes_les_cartes img
 {
-	height: 57%;
-	width: 97%;
+  object-fit: cover;
+	height: 50%;
+  width: 97%;
   border-radius: 1.5em 1.5em 0em 0em;
   margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
   margin-left: 0.2em;
   margin-right: 0.1em;
-  margin-bottom: 0em;
 }
 
 .carte_hebergements /* Fond blanc contenant les img + texte */
@@ -561,9 +569,12 @@ aside p
   display: flex;
   flex-direction: column;
 	background-color: white;
-	height: 14em;
+	height: 12em;
 	width: 16em;
   border-radius: 1.8em;
+  margin: auto; /* Aligne chaque card sur l'axe verticale */ 
+  margin-bottom: 1.5em;
+  margin-left: -0.4em;
 }
 
 .titre_de_la_chambre h2
@@ -613,7 +624,7 @@ aside p
 .amina img /* Carte pour hôtel amina dimension photo spécifique */
 {
     object-fit: cover;
-    height: 27%;
+    height: 24%;
     border-radius: 1.5em 1.5em 0em 0em;
     margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
     margin-left: 0.2em;
@@ -623,13 +634,55 @@ aside p
 
 .la_mer img /* Carte pour hôtel la mer dimension spécifique */
 {
-  height: 45%;
+  object-fit: cover;
+  height: 39%;
   width: 97%;
   border-radius: 1.5em 1.5em 0em 0em;
   margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
   margin-left: 0.2em;
   margin-right: 0.1em;
   margin-bottom: 0em;
+}
+
+/* Les plus populaires */
+
+.les_populaires
+{
+	display: flex;
+  flex-direction: column;
+  align-content: space-between;
+	background-color: #F2F2F2;
+  width: 20em;
+  height: 35em;
+  border-radius: 1em 1em 1em 1em;
+  padding-left: 1.5em;
+  margin-left: 1.5em;
+}
+
+.populaires
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fa-chart-line
+{
+  color: black;
+  padding-left: 2.5em;
+}
+
+.carte_populaires /* Fond blanc contenant les img + texte */
+{
+  display: flex;
+  flex-direction: column;
+	background-color: white;
+	height: 9em;
+	width: 19em;
+  border-radius: 1.8em;
+  margin: auto; /* Aligne chaque card sur l'axe verticale */ 
+  margin-bottom: 1.5em;
+  margin-left: -0.4em;
 }
 
 /* Pied de page */
@@ -663,7 +716,6 @@ footer section
 	padding-top: 1em;
 }
 
-
 .nos_hebergements a
 {
 	display: flex;
@@ -681,4 +733,3 @@ footer section
 	color: black;
 	padding-bottom: 0.6em;
 }
-
