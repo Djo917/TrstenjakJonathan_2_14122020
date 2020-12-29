@@ -479,13 +479,7 @@ aside
   padding-right: 1%;
 }
 
-aside p
-{
-	border: solid 2px #F2F2F2;
-	border-radius: 25px;
-	padding-right: 1.5%;
-	margin: 7px;
-}
+
 
 .filtres p:hover
 {
@@ -648,8 +642,6 @@ aside p
 
 .les_populaires
 {
-	display: flex;
-  flex-direction: column;
   align-content: space-between;
 	background-color: #F2F2F2;
   width: 20em;
@@ -659,30 +651,60 @@ aside p
   margin-left: 1.5em;
 }
 
-.populaires
-{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .fa-chart-line
 {
   color: black;
   padding-left: 2.5em;
 }
 
-.carte_populaires /* Fond blanc contenant les img + texte */
+.carte_populaires a /* Fond blanc contenant les img + texte */
 {
   display: flex;
-  flex-direction: column;
-	background-color: white;
+  background-color: white;
 	height: 9em;
 	width: 19em;
   border-radius: 1.8em;
   margin: auto; /* Aligne chaque card sur l'axe verticale */ 
   margin-bottom: 1.5em;
   margin-left: -0.4em;
+  text-decoration: none;
+}
+
+.carte_populaires img
+{  
+  width: 8em;
+  border-radius: 1.8em 0em 0em 1.8em;
+  height: 8.5em;
+  object-fit: cover;
+  padding-top: 0.3em;
+  padding-left: 0.3em;
+}
+
+.descriptif_populaires
+{
+  display: flex;
+  flex-direction: column;
+	font-size: 0.7em;
+  padding-left: 1em;
+  font-style: bold;
+  margin-bottom: 0em;
+  color: black;
+}
+
+.descriptif_populaires p
+{
+  font-size: 1.2em;
+  margin-bottom: 3.5em;
+  margin-top: -0.7em;
+}
+
+.etoiles_populaires
+{
+  height: 0.5em;
+  width: 50%;
+  color: #0065FC;
+  font-size: 1em;
+  margin-bottom: 0em;
 }
 
 /* Pied de page */
