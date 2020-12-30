@@ -411,11 +411,18 @@ form
 
 /* Activités à Marseille */
 
+.titre_activites
+{
+  margin-left: 2em;
+  font-size: 1.3em;
+  color: black;
+}
+
 .activites_marseille
 {
   display: flex;
 }
-.carte_port_calanques
+.carte_vieux_port
 {
   background-color: white;
   height: 40em;
@@ -425,7 +432,12 @@ form
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
-.carte_port_calanques img
+.lien_activites
+{
+  text-decoration: none;
+}
+
+.carte_vieux_port img
 {
   height: 35em;
   width: 25em;
@@ -439,18 +451,6 @@ form
   color: black;
   font-size: 1.2em;
   margin-left: 0.7em;
-}
-
-.lien_activites
-{
-  text-decoration: none;
-}
-
-.titre_activites
-{
-  margin-left: 2em;
-  font-size: 1.3em;
-  color: black;
 }
 
 .carte_pomegues
