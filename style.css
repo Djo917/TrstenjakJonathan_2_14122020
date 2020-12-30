@@ -8,7 +8,7 @@
 body
 {
   font-family: 'raleway';
-  margin-left : 1em;
+  margin-left: 2em;
 }
 
 /* Menu de navigation */
@@ -173,7 +173,6 @@ form
 	background-color: #DEEBFF;
 }
 
-
 /* Quantité de logements disponibles dans la ville*/
 
 .disponibilites
@@ -182,7 +181,7 @@ form
 	align-items: center;
 }
 
-.disponibilites i
+.fa-info
 {
 	display: flex;
 	align-items: center;
@@ -191,10 +190,16 @@ form
 	color: #0065FC;
 	border: solid 2px #F2F2F2;
 	border-radius: 20px;
-	padding: 10px;
-	height: 2px;
-	width: 2px;
-	margin-right: 10px;
+	padding: 0.8em;
+	height: 0.4em;
+	width: 0.4em;
+	margin-right: 1em;
+}
+
+.titre_disponibilites
+{
+  font-size: 1.3em;
+  font-weight: normal;
 }
 
 /* Bloc hebergements et populaires */
@@ -202,6 +207,7 @@ form
 .bloc_hebergements_populaires
 {
   display: flex;
+  align-items: center;
 }
 
 /* Section Hébergements */
@@ -215,7 +221,7 @@ form
   height: 35em;
   border-radius: 1em 1em 1em 1em;
   padding-left: 1.5em;
-  margin-left: 2em;
+
 }
 
 .toutes_les_cartes img
@@ -289,7 +295,7 @@ form
 .amina img /* Carte pour hôtel amina dimension photo spécifique */
 {
     object-fit: cover;
-    height: 24%;
+    height: 26.5%;
     border-radius: 1.5em 1.5em 0em 0em;
     margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
     margin-left: 0.2em;
@@ -309,16 +315,25 @@ form
   margin-bottom: 0em;
 }
 
+.le_panier img
+{
+  height: 57%;
+  width: 97%;
+}
+
+.bouton_afficher
+{
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
 /* Les plus populaires */
 
-aside /* Remplacer par une classe */
-{
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-}
 .les_populaires
 {
+  display: flex;
+	flex-wrap: wrap;
+	align-items: center;
   align-content: space-between;
 	background-color: #F2F2F2;
   width: 22em;
@@ -327,24 +342,24 @@ aside /* Remplacer par une classe */
   padding-left: 1.5em;
   margin-left: 1.5em;
 }
+.populaires
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
 
 .titre_populaires
 {
   font-weight: 700;
   margin-right: 2em;
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .fa-chart-line
 {
   color: black;
   padding-left: 2.5em;
-  margin-top: 1.8em;
-}
-
-.carte_populaires
-{
-  margin: 0.7em;
 }
 
 .carte_populaires a /* Fond blanc contenant les img + texte */
@@ -354,7 +369,7 @@ aside /* Remplacer par une classe */
 	height: 8em;
   width: 20em;
   border-radius: 1.8em;
-  margin-bottom: 1.5em;
+  margin-bottom: 2.5em;
   margin-left: -0.4em;
   text-decoration: none;
 }
@@ -383,7 +398,7 @@ aside /* Remplacer par une classe */
 .descriptif_populaires p
 {
   font-size: 1.2em;
-  margin-bottom: 2.8em;
+  margin-bottom: 2em;
   margin-top: -0.7em;
 }
 
@@ -407,7 +422,6 @@ aside /* Remplacer par une classe */
   width: 25em;
   border-radius: 1.5em;
   margin-bottom: 3em;
-  margin-left: 2em;
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
