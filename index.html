@@ -10,34 +10,62 @@
     </head>
 
 <body>
+    <!--Menu de navigation en haut à droite du site-->
+    <nav class="menu_navigation">
+        <a class="bouton_hébergements" href="#hébergements">Hébergements</a>
+        <a href="#activités">Activités</a>
+        <a class="inscription" href="#">S'inscrire</a>
+    </nav>
+
+    <!--Logo + introduction du site-->
     <header>
-        <nav>
-            <a class="bouton_hébergements" href="#hébergements">Hébergements</a>
-            <a href="#activités">Activités</a>
-            <a class="inscription" href="#">S'inscrire</a>
-        </nav>
         <img class="logo_reservia" src="images/logo/Reservia@3x.png" alt="logo de reservia"/>
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
-
     </header>
 
-    <nav>
+    <!--Formulaire de recherche-->
+    <div class="formulaire_de_recherche">
         <form method="post" action="#">
-            <i class="fas fa-map-marker-alt toto"></i>
+            <div class="logo_recherche"> <!--Créé le cadre englobant le font awesome-->
+                <i class="fas fa-map-marker-alt"></i>
+            </div>
             <input class="champ" type="search" size="30" name="ville" placeholder="Marseille, France" />
-            <input class="bouton" type="submit" value="Rechercher"/>
+            <input class="bouton_rechercher" type="submit" value="Rechercher"/>
         </form>
-    </nav>
+    </div>
 
     <aside class="filtres">
         <h2 class="titre_filtres">Filtres</h2>
-        <div class="filtres_logo">
-            <p><i class="fas fa-money-bill-wave a"></i>Economique</p>
-            <p><i class="fas fa-child"></i>Familial</p>
-            <p><i class="fas fa-heart"></i>Romantique</p>
-            <p><i class="fas fa-dog"></i>Animaux autorisés</p>
+        
+        <div class="filtres_bouton"> <!--Modèle de référence pour un filtre unique, nom et largeur à adapter-->
+            <div class="background">
+                <i class="fas fa-money-bill-wave a"></i>
+            </div>
+                <p>Economique</p>
         </div>
+
+        <div class="filtres_bouton familial"> 
+            <div class="background">
+                <i class="fas fa-child"></i>
+            </div>
+                <p>Familial</p>
+        </div>
+
+        <div class="filtres_bouton romantique">
+            <div class="background">
+                <i class="fas fa-heart"></i>
+            </div>
+                <p>Romantique</p>
+        </div>
+
+        <div class="filtres_bouton animaux">
+            <div class="background">
+                <i class="fas fa-dog"></i>
+            </div>
+                <p>Animaux autorisés</p>
+        </div>
+
     </aside>
 
     <section class="disponibilites">
@@ -152,7 +180,7 @@
                 <section class="populaires">
                     <article class="carte_populaires">
                         <a href="#">
-                            <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
+                            <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" 
                         alt="photo de la chambre de l'hôtel le soleil du matin" 
                         />
                         <div class="descriptif_populaires">    
@@ -172,7 +200,7 @@
 
                     <article class="carte_populaires">
                         <a href="#">
-                            <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" 
+                            <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" 
                             alt="photo de la chambre au coeur de l'eau, chambre d'hôtes" 
                         />
                         <div class="descriptif_populaires">    
@@ -191,7 +219,7 @@
 
                     <article class="carte_populaires">
                         <a href="#">
-                            <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
+                            <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" 
                         alt="photo de la chambre de l'hôtel tout bleu et blanc" 
                     />
                         <div class="descriptif_populaires">    
