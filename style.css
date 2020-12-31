@@ -46,7 +46,8 @@ body
 
 header
 {
-	margin-top: 2em;
+  margin-top: 2em;
+  margin-left: 3em;
 }
 
 .logo_reservia
@@ -67,6 +68,11 @@ header h1
 }
 
 /* Formulaire */
+
+.formulaire_de_recherche
+{
+  margin-left: 3em;
+}
 
 form
 {
@@ -120,6 +126,7 @@ form
 {
   display: flex;
   align-items: center;
+  margin-left: 3em;
 }
 .titre_filtres
 {
@@ -178,7 +185,8 @@ form
 .disponibilites
 {
 	display: flex;
-	align-items: center;
+  align-items: center;
+  margin-left: 3em;
 }
 
 .fa-info
@@ -208,6 +216,8 @@ form
 {
   display: flex;
   align-items: center;
+  margin-left: 3em;
+  border: solid 1px black;
 }
 
 /* Section Hébergements */
@@ -413,7 +423,7 @@ form
 
 .titre_activites
 {
-  margin-left: 2em;
+  margin-left: 3em;
   font-size: 1.3em;
   color: black;
 }
@@ -421,7 +431,10 @@ form
 .activites_marseille
 {
   display: flex;
+  margin-left: 3em;
+  border: solid 1px black;
 }
+
 .carte_vieux_port
 {
   background-color: white;
@@ -432,32 +445,32 @@ form
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
+.carte_vieux_port img
+{
+  height: 35em;
+  width: 22em;
+  object-fit: cover;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+
 .lien_activites
 {
   text-decoration: none;
 }
 
-.carte_vieux_port img
-{
-  height: 35em;
-  width: 25em;
-  object-fit: cover;
-  border-radius: 1.5em 1.5em 0em 0em;
-}
-
 .nom_activites
 {
-  text-decoration: none;
   color: black;
-  font-size: 1.2em;
+  font-size: 1.3em;
   margin-left: 0.7em;
+  font-weight: bold;
 }
 
 .carte_pomegues
 {
   background-color: white;
-  height: 21em;
-  width: 25em;
+  height: 19em;
+  width: 22em;
   border-radius: 1.5em;
   margin-bottom: 3em;
   margin-left: 2em;
@@ -466,8 +479,85 @@ form
 
 .carte_pomegues img
 {
+  height: 15em;
+  width: 22em;
+  object-fit: cover;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.carte_frioul
+{
+  background-color: white;
   height: 17em;
-  width: 25em;
+  width: 22em;
+  border-radius: 1.5em;
+  margin-left: 2em;
+  margin-top: 3.8em;
+  box-shadow: 0px 5px 5px #F2F2F2; 
+}
+
+.carte_frioul img
+{
+  height: 13em;
+  width: 22em;
+  object-fit: cover;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.carte_calanques
+{
+  background-color: white;
+  height: 40em;
+  width: 22em;
+  border-radius: 1.5em;
+  margin-bottom: 3em;
+  margin-left: 2em;
+  box-shadow: 0px 5px 5px #F2F2F2; 
+}
+
+.carte_calanques img
+{
+  height: 35em;
+  width: 22em;
+  object-fit: cover;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.carte_notre_dame
+{
+  background-color: white;
+  height: 18em;
+  width: 23em;
+  border-radius: 1.5em;
+  margin-bottom: 3em;
+  margin-left: 2em;
+  box-shadow: 0px 5px 5px #F2F2F2;
+}
+
+.carte_notre_dame img
+{
+  height: 13em;
+  width: 23em;
+  object-fit: cover;
+  border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.carte_longchamp
+{
+  background-color: white;
+  height: 17em;
+  width: 23em;
+  border-radius: 1.5em;
+  margin-bottom: 3em;
+  margin-left: 2em;
+  margin-top: 4.9em;
+  box-shadow: 0px 5px 5px #F2F2F2;
+}
+
+.carte_longchamp img
+{
+  height: 12em;
+  width: 23em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
