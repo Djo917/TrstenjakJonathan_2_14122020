@@ -17,6 +17,7 @@ body
 {
 	display: flex;
   justify-content: flex-end;
+  width: 92em;
 }
 
 .menu_navigation a
@@ -28,8 +29,7 @@ body
 
 .menu_navigation a:hover
 {
-	text-decoration: overline 2px;
-	color: #0065FC;
+	text-decoration: overline 2px #0065FC;
 }
 
 .bouton_hébergements
@@ -131,7 +131,6 @@ form
 .titre_filtres
 {
 	font-size: 1.5em;
-	font-style: bold;
   padding-right: 0.7em;
 }
 
@@ -215,9 +214,8 @@ form
 .bloc_hebergements_populaires
 {
   display: flex;
-  align-items: center;
   margin-left: 3em;
-  border: solid 1px black;
+  width: 87em;
 }
 
 /* Section Hébergements */
@@ -227,7 +225,6 @@ form
 	display: flex;
   flex-direction: column;
 	background-color: #F2F2F2;
-  width: 50%;
   height: 35em;
   border-radius: 1em 1em 1em 1em;
   padding-left: 1.5em;
@@ -262,7 +259,6 @@ form
 {
 	font-size: 0.8em;
   padding-left: 1em;
-  font-style: bold;
   margin-bottom: 0em;
 }
 
@@ -299,7 +295,6 @@ form
 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
 }
 
 .amina img /* Carte pour hôtel amina dimension photo spécifique */
@@ -341,43 +336,33 @@ form
 
 .les_populaires
 {
-  display: flex;
-	flex-wrap: wrap;
-	align-items: center;
   align-content: space-between;
 	background-color: #F2F2F2;
-  width: 22em;
+  width: 25em;
   height: 35em;
   border-radius: 1em 1em 1em 1em;
   padding-left: 1.5em;
+  padding-right: 1.5em;;
   margin-left: 1.5em;
-}
-.populaires
-{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
 }
 
 .titre_populaires
 {
-  font-weight: 700;
-  margin-right: 2em;
+  font-size: 1.2em;
+  font-weight: 900;
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1em;
   margin-top: 1em;
 }
 
-.fa-chart-line
-{
-  color: black;
-  padding-left: 2.5em;
-}
 
 .carte_populaires a /* Fond blanc contenant les img + texte */
 {
   display: flex;
   background-color: white;
 	height: 8em;
-  width: 20em;
+  width: 19em;
   border-radius: 1.8em;
   margin-bottom: 2.5em;
   margin-left: -0.4em;
@@ -396,11 +381,8 @@ form
 
 .descriptif_populaires
 {
-  display: flex;
-  flex-direction: column;
 	font-size: 0.7em;
   padding-left: 1em;
-  font-style: bold;
   margin-bottom: 0em;
   color: black;
 }
@@ -432,13 +414,13 @@ form
 {
   display: flex;
   margin-left: 3em;
-  border: solid 1px black;
+  width: 85em;
 }
 
 .carte_vieux_port
 {
   background-color: white;
-  height: 40em;
+  height: 34em;
   width: 25em;
   border-radius: 1.5em;
   margin-bottom: 3em;
@@ -447,7 +429,7 @@ form
 
 .carte_vieux_port img
 {
-  height: 35em;
+  height: 30em;
   width: 22em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
@@ -469,8 +451,8 @@ form
 .carte_pomegues
 {
   background-color: white;
-  height: 19em;
-  width: 22em;
+  height: 15em;
+  width: 19em;
   border-radius: 1.5em;
   margin-bottom: 3em;
   margin-left: 2em;
@@ -479,8 +461,8 @@ form
 
 .carte_pomegues img
 {
-  height: 15em;
-  width: 22em;
+  height: 11em;
+  width: 19em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -488,18 +470,18 @@ form
 .carte_frioul
 {
   background-color: white;
-  height: 17em;
-  width: 22em;
+  height: 14em;
+  width: 19em;
   border-radius: 1.5em;
   margin-left: 2em;
-  margin-top: 3.8em;
+  margin-top: 5em;
   box-shadow: 0px 5px 5px #F2F2F2; 
 }
 
 .carte_frioul img
 {
-  height: 13em;
-  width: 22em;
+  height: 10em;
+  width: 19em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -507,8 +489,8 @@ form
 .carte_calanques
 {
   background-color: white;
-  height: 40em;
-  width: 22em;
+  height: 34em;
+  width: 21em;
   border-radius: 1.5em;
   margin-bottom: 3em;
   margin-left: 2em;
@@ -517,8 +499,8 @@ form
 
 .carte_calanques img
 {
-  height: 35em;
-  width: 22em;
+  height: 30em;
+  width: 21em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -526,8 +508,8 @@ form
 .carte_notre_dame
 {
   background-color: white;
-  height: 18em;
-  width: 23em;
+  height: 13em;
+  width: 19em;
   border-radius: 1.5em;
   margin-bottom: 3em;
   margin-left: 2em;
@@ -536,8 +518,8 @@ form
 
 .carte_notre_dame img
 {
-  height: 13em;
-  width: 23em;
+  height: 9em;
+  width: 19em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -545,19 +527,19 @@ form
 .carte_longchamp
 {
   background-color: white;
-  height: 17em;
-  width: 23em;
+  height: 14em;
+  width: 19em;
   border-radius: 1.5em;
   margin-bottom: 3em;
   margin-left: 2em;
-  margin-top: 4.9em;
+  margin-top: 7em;
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
 .carte_longchamp img
 {
-  height: 12em;
-  width: 23em;
+  height: 10em;
+  width: 19em;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -566,7 +548,7 @@ form
 
 footer
 {
-  width: 100%;
+  width: 82%;
 	height: 11em;
 	display: flex;
 	justify-content: space-between;
@@ -610,4 +592,14 @@ footer section
 	text-decoration: none;
 	color: black;
 	padding-bottom: 0.6em;
+}
+
+/* Début de la partie responsive */
+
+@media all and (max-width: 480px)
+{
+  .hebergements_et_nomdeville
+  {
+    background-color: white;
+  }
 }
