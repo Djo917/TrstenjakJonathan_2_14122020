@@ -32,14 +32,14 @@ body
 	text-decoration: overline 2px #0065FC;
 }
 
-.bouton_hébergements
+.couleur_nav
 {
 	color: #0065FC;
 }
 
-.inscription
+.menu_activites
 {
-	color: #0065FC;
+  color: grey;
 }
 
 /* Header */
@@ -598,8 +598,194 @@ footer section
 
 @media all and (max-width: 480px)
 {
+
+  /* Responsive menu de navigation*/
+  .menu_navigation
+  {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .inscription
+  {
+    order: 1;
+    font-weight: bold;
+    padding-bottom: 2em;
+  }
+
+  .bouton_hébergements
+  {
+    order: 2;
+  }
+
+  .menu_activites
+  {
+    order: 3;
+  }
+
+  .menu_navigation a:hover
+{
+  padding-bottom: 1em;
+	text-decoration: underline 2px #0065FC;
+}
+
+  /* Reponsive hébergements + populaires */
   .hebergements_et_nomdeville
   {
     background-color: white;
+    height: 50%;
+  }
+
+  .toutes_les_cartes
+  {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .bloc_hebergements_populaires
+  {
+    flex-direction: column-reverse;
+  }
+
+  .les_populaires
+  {
+    width: 22%;
+    border-radius: 0em;
+    margin-left: 0;
+  }
+  /* Fin Reponsive hébergements + populaires */
+
+  /* Reponsive section activités */
+  .activites_marseille
+  {
+    flex-direction: column;
+  }
+
+  .carte_vieux_port
+  {
+    width: 19em;
+    height: 8em;
+  }
+
+  .carte_vieux_port img
+  {
+    width: 19em;
+    height: 5em;
+  }
+
+  .carte_pomegues
+  {
+    width: 19em;
+    height: 8em;
+  }
+
+  .carte_pomegues img
+  {
+    width: 19em;
+    height: 5em;
+  }
+
+  .carte_frioul
+  {
+    width: 19em;
+    height: 8em;
+  }
+
+  .carte_frioul img
+  {
+    width: 19em;
+    height: 5em;
+  }
+  
+  .carte_calanques
+  {
+    width: 19em;
+    height: 8em;
+  }
+
+  .carte_calanques img
+  {
+    width: 19em;
+    height: 5em;
+  }
+
+  .carte_notre_dame
+  {
+    width: 19em;
+    height: 8em;
+  }
+
+  .carte_notre_dame img
+  {
+    width: 19em;
+    height: 5em;
+  }
+
+  .carte_longchamp
+  {
+    width: 19em;
+    height: 8em;
+  }
+
+  .carte_longchamp img
+  {
+    width: 19em;
+    height: 5em;
+  }
+
+  .nomarge
+  {
+    margin-left: 0;
+    margin-top: 2em;
+    margin-bottom: 0em;
+  }
+  /* Fin reponsive section activités */
+
+  /* Responsive footer */
+  footer
+  {
+    margin-left: 2em;
+    margin-top: 2em;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 35%;
+    height: 29em;
+  }
+
+  .marge
+  {
+    padding-top: 1em;
+    width: 60%;
+  }
+
+  footer h2
+  {
+    font-size: 1.3em;
+  }
+
+  footer a
+  {
+    width: 20em;
+    font-size: 1.1em;
+  }
+  /* Fin Responsive footer */
+
+  .titre_disponibilites
+  {
+    width: 35%;
+    font-size: 1em;
+  }
+
+  .filtres
+  {
+    display: flex;
+    margin-bottom: 1em;
+  }
+
+  .reponsiv_align
+  {
+    align-self: flex-end;
   }
 }

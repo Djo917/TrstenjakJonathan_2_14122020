@@ -12,9 +12,9 @@
 <body>
     <!--Menu de navigation en haut à droite du site-->
     <nav class="menu_navigation">
-        <a class="bouton_hébergements" href="#hébergements">Hébergements</a>
-        <a href="#activités">Activités</a>
-        <a class="inscription" href="#">S'inscrire</a>
+        <a class="bouton_hébergements couleur_nav" href="#hébergements">Hébergements</a>
+        <a class="menu_activites" href="#activités">Activités</a>
+        <a class="inscription couleur_nav" href="#">S'inscrire</a>
     </nav>
 
     <!--Logo + introduction du site-->
@@ -54,14 +54,14 @@
             <p>Familial</p>
         </div>
 
-        <div class="filtres_bouton romantique">
+        <div class="filtres_bouton romantique responsive_align">
             <div class="background">
                 <i class="fas fa-heart"></i>
             </div>
             <p>Romantique</p>
         </div>
 
-        <div class="filtres_bouton animaux">
+        <div class="filtres_bouton animaux responsive_align">
             <div class="background">
                 <i class="fas fa-dog"></i>
             </div>
@@ -80,8 +80,8 @@
     <div class="bloc_hebergements_populaires">
         <section class="hebergements_et_nomdeville"> <!--Affiche les résultats de recherche en fonction de la ville-->
             <h2 class="hebergements">Hébergements à Marseille</h2>
-            <!--Début du modèle de référence pour une carte unique, à adapter en changeant la photo, le nom et les étoiles associées-->
             <div class="toutes_les_cartes">   
+            <!--Début du modèle de référence pour une carte unique, à adapter en changeant la photo, le nom et les étoiles associées-->
                 <article class="carte_hebergements titre_de_la_chambre">
                     <a href="#">
                         <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" 
@@ -252,7 +252,7 @@
     <!--Début de la section activités associées à la ville-->
     <h2 class="titre_activites">Activités à Marseille</h2>
     <aside class="activites_marseille">
-        <article class="carte_vieux_port"> <!--Chaque carte a des dimmensions uniques, pas de modèle type-->
+        <article class="carte_vieux_port nomarge"> <!--Chaque carte a des dimmensions uniques, pas de modèle type-->
             <a href="#" class="lien_activites">
                 <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" 
                 alt="photo des bateaux du vieux port de Marseille" />
@@ -262,7 +262,7 @@
 
         <!--Contient 2 cartes alignées verticalement-->
         <div class="colonne_2">
-            <article class="carte_pomegues">
+            <article class="carte_pomegues nomarge">
                 <a href="#" class="lien_activites">
                     <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" 
                     alt="photo du fort de pomègues"/>
@@ -270,7 +270,7 @@
                 </a>
             </article>
 
-            <article class=carte_frioul>
+            <article class="carte_frioul nomarge">
                 <a href="#" class="lien_activites">
                     <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
                     alt="photo des îles du Frioul" />
@@ -282,7 +282,7 @@
 
         <!--Troisième colonne contenant une seule carte-->
         <div class="colonne_3">
-            <article class="carte_calanques">
+            <article class="carte_calanques nomarge">
                 <a href="#" class="lien_activites">
                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" 
                     alt="photo du parc national des calanques" />
@@ -294,7 +294,7 @@
 
         <!--Quatrième colonne, 2 cartes alignées verticalement-->
         <div class="colonne_4">
-            <article class="carte_notre_dame">
+            <article class="carte_notre_dame nomarge">
                 <a href="#" class="lien_activites">
                     <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" 
                     alt="photo de l'église notre dame de la garde"/>
@@ -302,13 +302,14 @@
                 </a>
             </article>
 
-            <article class=carte_longchamp>
+            <article class="carte_longchamp nomarge">
                 <a href="#" class="lien_activites">
                     <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" 
                     alt="photo du parc Longchamp" />
                     <h2 class="nom_activites">Parc Longchamp</h2>
                 </a>
             </article>
+        <!--Fin colonne 4-->
         </div>
     </aside>
     <!--Fin de la section activités associées à la ville-->
