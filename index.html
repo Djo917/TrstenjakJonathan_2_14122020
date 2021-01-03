@@ -12,14 +12,16 @@
 <body>
     <!--Menu de navigation en haut à droite du site-->
     <nav class="menu_navigation">
-        <a class="bouton_hébergements couleur_nav" href="#hébergements">Hébergements</a>
-        <a class="menu_activites" href="#activités">Activités</a>
+        <img class="logo_reservia" src="images/logo/Reservia@3x.png" alt="logo de reservia"/>
+        <ul class="test">
+            <a class="bouton_hébergements nav_responsive couleur_nav" href="#hébergements">Hébergements</a>
+            <a class="menu_activites nav_responsive" href="#activités">Activités</a>
+        </ul>
         <a class="inscription couleur_nav" href="#">S'inscrire</a>
     </nav>
 
     <!--Logo + introduction du site-->
     <header>
-        <img class="logo_reservia" src="images/logo/Reservia@3x.png" alt="logo de reservia"/>
         <h1>Trouvez votre hébergement pour des vacances de rêves</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
     </header>
@@ -40,18 +42,21 @@
     <aside class="filtres">
         <h2 class="titre_filtres">Filtres</h2>
         
-        <div class="filtres_bouton"> <!--Modèle de référence pour un filtre unique, nom et largeur à adapter-->
-            <div class="background">
-                <i class="fas fa-money-bill-wave a"></i>
+        <div class="filtres_responsive">
+            <div class="filtres_bouton"> <!--Modèle de référence pour un filtre unique, nom et largeur à adapter-->
+                <div class="background">
+                    <i class="fas fa-money-bill-wave a"></i>
+                </div>
+                <p>Economique</p>
             </div>
-            <p>Economique</p>
-        </div>
+        
 
-        <div class="filtres_bouton familial"> 
-            <div class="background">
-                <i class="fas fa-child"></i>
+            <div class="filtres_bouton familial"> 
+                <div class="background">
+                    <i class="fas fa-child"></i>
+                </div>
+                <p>Familial</p>
             </div>
-            <p>Familial</p>
         </div>
 
         <div class="filtres_bouton romantique responsive_align">

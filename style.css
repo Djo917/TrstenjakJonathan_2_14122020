@@ -15,9 +15,9 @@ body
 
 .menu_navigation
 {
-	display: flex;
+  display: flex;
   justify-content: flex-end;
-  width: 92em;
+  align-items: center;
 }
 
 .menu_navigation a
@@ -42,17 +42,17 @@ body
   color: grey;
 }
 
+.logo_reservia
+{
+  width: 5em;
+}
+
 /* Header */
 
 header
 {
   margin-top: 2em;
   margin-left: 3em;
-}
-
-.logo_reservia
-{
-	width: 5%;
 }
 
 header h2
@@ -122,6 +122,10 @@ form
 
 /* Filtres */
 
+.filtres_responsive
+{
+  display: flex;
+}
 .filtres
 {
   display: flex;
@@ -598,30 +602,46 @@ footer section
 
 @media all and (max-width: 480px)
 {
-
   /* Responsive menu de navigation*/
   .menu_navigation
   {
     display: flex;
     justify-content: flex-start;
-    flex-wrap: wrap;
+    margin-left: 2em;
+    width: 100%;
+  }
+
+  .nav_responsive
+  {
+    padding-top: 4em;
   }
 
   .inscription
   {
+    position: absolute;
+    right: 35em;
     order: 1;
     font-weight: bold;
     padding-bottom: 2em;
   }
 
+  .test{
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: solid 2px #F2F2F2;
+  }
+
   .bouton_hébergements
   {
     order: 2;
+    width: 7em;
   }
 
   .menu_activites
   {
     order: 3;
+
   }
 
   .menu_navigation a:hover
@@ -629,6 +649,18 @@ footer section
   padding-bottom: 1em;
 	text-decoration: underline 2px #0065FC;
 }
+
+  /* Responsive filtres */
+  .filtres
+  {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filtres_bouton
+  {
+    margin-bottom: 0.4em;
+  }
 
   /* Reponsive hébergements + populaires */
   .hebergements_et_nomdeville
