@@ -243,7 +243,7 @@ form
   display: flex;
   flex-direction: column;
   width: 50%;
-  height: 37em;
+  height: 50em;
   background-color: #F2F2F2;
   border-radius: 1em 1em 1em 1em;
   padding-left: 1.5em;
@@ -253,6 +253,7 @@ form
 {
     display: flex;
     justify-content: space-around;
+    height: 100%;
     margin-left: -1.5em;
 }
 
@@ -267,7 +268,7 @@ form
 .carte_hebergements /* Fond blanc contenant les img + texte */
 {
     background-color: white;
-	height: 90%;
+    height: 90%;
     width: 28%;
     border-radius: 1.1em;
 }
@@ -591,143 +592,157 @@ footer section
 
 /* Début de la partie responsive */
 
-@media only screen and (max-width: 480px)
+@media all and (max-width: 1620px)
 {
   /* Responsive menu de navigation*/
-  .menu_navigation
-  {
-    display: flex;
-    justify-content: flex-start;
-    margin-left: 2em;
-    width: 100%;
-  }
+.menu_navigation
+{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2em;
+  width: 100%;
+}
 
-  .nav_responsive
-  {
-    padding-top: 4em;
-    width: 50%;
-  }
+.nav_responsive
+{
+  padding-top: 4em;
+  width: 50%;
+}
 
-  .inscription
-  {
-    position: absolute;
-    right: 35em;
-    order: 1;
-    font-weight: bold;
-    padding-bottom: 2em;
-  }
+.inscription
+{
+  position: absolute;
+  right: 35em;
+  order: 1;
+  font-weight: bold;
+  padding-bottom: 2em;
+}
 
-  .hebergements_activites
-  {
-    position: relative;
-    right: 5em;
-    display: flex;
-    padding-left: 2em;
-    border-bottom: solid 2px #F2F2F2;
-  }
+.hebergements_activites
+{
+  position: relative;
+  right: 5em;
+  display: flex;
+  padding-left: 2em;
+  border-bottom: solid 2px #F2F2F2;
+}
 
-  .bouton_hebergements
-  {
-    order: 2;
-    width: 7em;
-    padding-bottom: 5px;
-  }
+.bouton_hebergements
+{
+  order: 2;
+  width: 7em;
+  padding-bottom: 5px;
+}
 
-  .menu_activites
-  {
-    order: 3;
-  }
+.menu_activites
+{
+  order: 3;
+}
 
-  .hebergements_activites a:hover
-  {
-	  text-decoration: underline 2px #0065FC;
-  }
+.hebergements_activites a:hover
+{
+    text-decoration: underline 2px #0065FC;
+}
 
-  /* Header */
-  header
-  {
-    width: 17em;
-  }
+/* Header */
+header
+{
+  width: 17em;
+}
 
-  header h2
-  {
-    font-size: 0.8em;
-  }
-  
-  /* Responsive filtres */
-  .filtres
-  {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+header h2
+{
+  font-size: 0.8em;
+}
 
-  .filtres_bouton
-  {
-    margin-bottom: 0.4em;
-  }
+/* Responsive filtres */
+.filtres
+{
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  /* Reponsive hébergements + populaires */
-  .hebergements_et_nomdeville
-  {
-    background-color: white;
-    height: 50%;
-  }
+.filtres_bouton
+{
+  margin-bottom: 0.4em;
+}  
+/* Reponsive hébergements + populaires */
+.bloc_hebergements_populaires
+{
+  flex-direction: column-reverse;
+}
 
-  .toutes_les_cartes
-  {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-  }
+.hebergements_et_nomdeville
+{
+background-color: white;
+height: 100%;
+width: 80%;
+margin-bottom: 2em;
+}
 
-  .bloc_hebergements_populaires
-  {
-    flex-direction: column-reverse;
-  }
+.carte_hebergements
+{
+  height: 13em;
+  box-shadow: 0px 3px 3px #F2F2F2;
+  margin-bottom: 1em;
+}
 
-  .les_populaires
-  {
-    width: 22%;
-    border-radius: 0em;
-    margin-left: 0;
-  }
-  /* Fin Reponsive hébergements + populaires */
+.ligne_hebergements
+{
+  flex-direction: column;
+  margin-left: 0em;
+}
 
-  /* Reponsive section activités */
-  .activites_marseille
-  {
-    flex-direction: column;
-  }
+.ligne_hebergements2
+{
+  flex-direction: column;
+  margin-left: 0em;
+}
 
-  .carte_vieux_port
-  {
-    width: 19em;
-    height: 8em;
-  }
 
-  .carte_vieux_port img
-  {
-    width: 19em;
-    height: 5em;
-  }
+.les_populaires
+{
+  width: 22%;
+  border-radius: 0em;
+  margin-left: 0;
+}
+/* Fin Reponsive hébergements + populaires */
 
-  .carte_pomegues
-  {
-    width: 19em;
-    height: 8em;
-  }
+/* Reponsive section activités */
+.activites_marseille
+{
+  flex-direction: column;
+}
 
-  .carte_pomegues img
-  {
-    width: 19em;
-    height: 5em;
-  }
+.carte_vieux_port
+{
+  width: 19em;
+  height: 8em;
+}
 
-  .carte_frioul
-  {
-    width: 19em;
-    height: 8em;
-  }
+.carte_vieux_port img
+{
+  width: 19em;
+  height: 5em;
+}
+
+.carte_pomegues
+{
+  width: 19em;
+  height: 8em;
+}
+
+.carte_pomegues img
+{
+  width: 19em;
+  height: 5em;
+}
+
+.carte_frioul
+{
+  width: 19em;
+  height: 8em;
+}
 
   .carte_frioul img
   {
@@ -787,7 +802,6 @@ footer section
     flex-direction: column;
     justify-content: flex-start;
     width: 35%;
-    background-color: red;
     height: 29em;
   }
 
