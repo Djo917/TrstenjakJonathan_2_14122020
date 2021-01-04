@@ -44,10 +44,13 @@ body
 
 .logo_reservia
 {
-  position: relative;
-  right: 81em;
-  margin-top: 5em;
   width: 5em;
+}
+
+.link__logo
+{
+  position: absolute;
+  right: 105em;
 }
 
 .inscription
@@ -128,6 +131,11 @@ form
   font-weight: bold;
 }
 
+.no_display
+{
+  display: none;
+}
+
 /* Filtres */
 
 .filtres_responsive
@@ -200,7 +208,7 @@ form
   margin-left: 3em;
 }
 
-.fa-info
+.centrage
 {
 	display: flex;
 	align-items: center;
@@ -222,63 +230,71 @@ form
 }
 
 /* Bloc hebergements et populaires */
-
 .bloc_hebergements_populaires
 {
   display: flex;
   margin-left: 3em;
-  width: 87em;
+  width: 100%;
 }
 
 /* Section Hébergements */
-
 .hebergements_et_nomdeville
 {
-	display: flex;
+  display: flex;
   flex-direction: column;
-	background-color: #F2F2F2;
-  height: 35em;
+  width: 50%;
+  height: 37em;
+  background-color: #F2F2F2;
   border-radius: 1em 1em 1em 1em;
   padding-left: 1.5em;
-
 }
 
-.toutes_les_cartes img
+.ligne_hebergements
 {
-  object-fit: cover;
-	height: 50%;
-  width: 97%;
-  border-radius: 1.5em 1.5em 0em 0em;
-  margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
-  margin-left: 0.2em;
-  margin-right: 0.1em;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -1.5em;
+}
+
+.ligne_hebergements2
+{
+    height: 42%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -1.5em;
 }
 
 .carte_hebergements /* Fond blanc contenant les img + texte */
 {
-  display: flex;
-  flex-direction: column;
-	background-color: white;
-	height: 12em;
-	width: 16em;
-  border-radius: 1.8em;
-  margin: auto; /* Aligne chaque card sur l'axe verticale */ 
-  margin-bottom: 1.5em;
-  margin-left: -0.4em;
+    background-color: white;
+	height: 90%;
+    width: 28%;
+    border-radius: 1.1em;
+}
+
+.carte_hebergements img
+{
+  object-fit: cover;
+  height: 60%;
+  width: 97%;
+  border-radius: 1.1em 1.1em 0em 0em;
+  margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
+  margin-left: 0.3em;
 }
 
 .titre_de_la_chambre h2
 {
-	font-size: 0.8em;
-  padding-left: 1em;
-  margin-bottom: 0em;
+    font-size: 1em;
+    padding-left: 1em;
+    margin-top: 0.1em;
+    margin-bottom: 0em;
 }
 
 .hebergements_et_nomdeville p
 {
-  font-size: 0.8em;
-  padding-left: 1em;
-  margin-bottom: 0.5em;
+  font-size: 0.9em;
+  padding-left: 1.1em;
+  margin-bottom: 0.2em;
   margin-top: 0.3em;
 }
 
@@ -287,8 +303,8 @@ form
   height: 0.5em;
   width: 50%;
   color: #0065FC;
-  padding-left: 1.5em;
-  font-size: 0.6em;
+  padding-left: 1.4em;
+  font-size: 0.7em;
   margin-bottom: 0em;
 }
 
@@ -303,41 +319,6 @@ form
   color: black;
 }
 
-.toutes_les_cartes
-{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.amina img /* Carte pour hôtel amina dimension photo spécifique */
-{
-    object-fit: cover;
-    height: 26.5%;
-    border-radius: 1.5em 1.5em 0em 0em;
-    margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
-    margin-left: 0.2em;
-    margin-right: 0.1em;
-    margin-bottom: 0em;
-}
-
-.la_mer img /* Carte pour hôtel la mer dimension spécifique */
-{
-  object-fit: cover;
-  height: 39%;
-  width: 97%;
-  border-radius: 1.5em 1.5em 0em 0em;
-  margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
-  margin-left: 0.2em;
-  margin-right: 0.1em;
-  margin-bottom: 0em;
-}
-
-.le_panier img
-{
-  height: 57%;
-  width: 97%;
-}
-
 .bouton_afficher
 {
   font-weight: bold;
@@ -349,9 +330,9 @@ form
 .les_populaires
 {
   align-content: space-between;
-	background-color: #F2F2F2;
-  width: 25em;
-  height: 35em;
+  background-color: #F2F2F2;
+  width: 18%;
+  height: 37em;
   border-radius: 1em 1em 1em 1em;
   padding-left: 1.5em;
   padding-right: 1.5em;;
@@ -366,6 +347,7 @@ form
   justify-content: space-between;
   margin-right: 1em;
   margin-top: 1em;
+  margin-bottom: 2em;
 }
 
 
@@ -373,9 +355,9 @@ form
 {
   display: flex;
   background-color: white;
-	height: 8em;
-  width: 19em;
-  border-radius: 1.8em;
+  height: 100%;
+  width: 100%;
+  border-radius: 1em;
   margin-bottom: 2.5em;
   margin-left: -0.4em;
   text-decoration: none;
@@ -384,11 +366,12 @@ form
 .carte_populaires img
 {  
   width: 8em;
-  border-radius: 1.8em 0em 0em 1.8em;
+  border-radius: 1em 0em 0em 1em;
   height: 7.5em;
   object-fit: cover;
-  padding-top: 0.3em;
-  padding-left: 0.3em;
+  padding-top: 0.2em;
+  padding-left: 0.2em;
+  padding-bottom: 0.2em;
 }
 
 .descriptif_populaires
