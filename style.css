@@ -50,7 +50,7 @@ body
 .link__logo
 {
   position: absolute;
-  right: 105em;
+  right: 122em;
 }
 
 .inscription
@@ -377,24 +377,29 @@ form
 
 .descriptif_populaires
 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 	font-size: 0.7em;
   padding-left: 1em;
-  margin-bottom: 0em;
   color: black;
+  margin-top: -4em;
 }
 
 .descriptif_populaires p
 {
   font-size: 1.2em;
-  margin-bottom: 2em;
-  margin-top: -0.7em;
+  margin-top: 0em;
 }
 
 .etoiles_populaires
 {
-  height: 0.5em;
+  height: 15%;
   color: #0065FC;
-  font-size: 1em;
+  font-size: 0.8em;
+  margin-left: 0em;
+  margin-top: 1em;
+  margin-bottom: -2em;
 }
 
 /* Activités à Marseille */
@@ -410,23 +415,23 @@ form
 {
   display: flex;
   margin-left: 3em;
-  width: 85em;
+  width: 73%;
+  height: 40em;
 }
 
 .carte_vieux_port
 {
   background-color: white;
-  height: 34em;
-  width: 25em;
+  height: 90%;
+  width: 25%;
   border-radius: 1.5em;
-  margin-bottom: 3em;
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
 .carte_vieux_port img
 {
-  height: 30em;
-  width: 22em;
+  height: 85%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -434,6 +439,7 @@ form
 .lien_activites
 {
   text-decoration: none;
+  height: 1000px;
 }
 
 .nom_activites
@@ -444,21 +450,29 @@ form
   font-weight: bold;
 }
 
+.colonne_2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 25%;
+  margin-left: 2em;
+}
+
 .carte_pomegues
 {
   background-color: white;
-  height: 15em;
-  width: 19em;
+  height: 49%;
+  width: 100%;
   border-radius: 1.5em;
-  margin-bottom: 3em;
-  margin-left: 2em;
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
 .carte_pomegues img
 {
-  height: 11em;
-  width: 19em;
+  height: 75%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -466,18 +480,16 @@ form
 .carte_frioul
 {
   background-color: white;
-  height: 14em;
-  width: 19em;
+  height: 40%;
+  width: 100%;
   border-radius: 1.5em;
-  margin-left: 2em;
-  margin-top: 5em;
   box-shadow: 0px 5px 5px #F2F2F2; 
 }
 
 .carte_frioul img
 {
-  height: 10em;
-  width: 19em;
+  height: 70%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -485,37 +497,44 @@ form
 .carte_calanques
 {
   background-color: white;
-  height: 34em;
-  width: 21em;
+  height: 90%;
+  width: 25%;
   border-radius: 1.5em;
-  margin-bottom: 3em;
   margin-left: 2em;
   box-shadow: 0px 5px 5px #F2F2F2; 
 }
 
 .carte_calanques img
 {
-  height: 30em;
-  width: 21em;
+  height: 85%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
+}
+
+.colonne_4
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+  width: 28%;
+  margin-left: 2em;
 }
 
 .carte_notre_dame
 {
   background-color: white;
-  height: 13em;
-  width: 19em;
+  height: 40%;
+  width: 92%;
   border-radius: 1.5em;
-  margin-bottom: 3em;
-  margin-left: 2em;
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
 .carte_notre_dame img
 {
-  height: 9em;
-  width: 19em;
+  height: 70%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -523,19 +542,16 @@ form
 .carte_longchamp
 {
   background-color: white;
-  height: 14em;
-  width: 19em;
+  height: 45%;
+  width: 92%;
   border-radius: 1.5em;
-  margin-bottom: 3em;
-  margin-left: 2em;
-  margin-top: 7em;
   box-shadow: 0px 5px 5px #F2F2F2;
 }
 
 .carte_longchamp img
 {
-  height: 10em;
-  width: 19em;
+  height: 75%;
+  width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
 }
@@ -544,11 +560,11 @@ form
 
 footer
 {
-  width: 82%;
-	height: 11em;
+  width: 78%;
+	height: 13em;
 	display: flex;
 	justify-content: space-between;
-	background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 footer section
@@ -592,7 +608,7 @@ footer section
 
 /* Début de la partie responsive */
 
-@media all and (max-width: 1620px)
+@media all and (max-width: 480px)
 {
   /* Responsive menu de navigation*/
 .menu_navigation
@@ -839,4 +855,9 @@ margin-bottom: 2em;
   {
     align-self: flex-end;
   }
+}
+
+@media all and (max-width: 1630px)
+{
+
 }
