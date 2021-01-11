@@ -50,7 +50,7 @@ body
 .link__logo
 {
   position: absolute;
-  right: 122em;
+  right: 88%;
 }
 
 .inscription
@@ -236,7 +236,6 @@ form
   margin-left: 3em;
   width: 95em;
   height: 42em;
-  border: solid 1px black;
 }
 
 /* Section Hébergements */
@@ -417,7 +416,7 @@ form
 {
   display: flex;
   margin-left: 3em;
-  width: 73%;
+  width: 83%;
   height: 40em;
 }
 
@@ -562,7 +561,7 @@ form
 
 footer
 {
-  width: 78%;
+  width: 90%;
 	height: 13em;
 	display: flex;
 	justify-content: space-between;
@@ -608,258 +607,132 @@ footer section
 	padding-bottom: 0.6em;
 }
 
-/* Début de la partie responsive */
+/* Reponsive Mobile */
 
-@media all and (max-width: 480px)
+@media screen and (max-width: 1000px)
 {
-  /* Responsive menu de navigation*/
-.menu_navigation
-{
-  display: flex;
-  justify-content: flex-start;
-  margin-left: 2em;
-  width: 100%;
-}
-
-.nav_responsive
-{
-  padding-top: 4em;
-  width: 50%;
-}
-
-.inscription
-{
-  position: absolute;
-  right: 35em;
-  order: 1;
-  font-weight: bold;
-  padding-bottom: 2em;
-}
-
-.hebergements_activites
-{
-  position: relative;
-  right: 5em;
-  display: flex;
-  padding-left: 2em;
-  border-bottom: solid 2px #F2F2F2;
-}
-
-.bouton_hebergements
-{
-  order: 2;
-  width: 7em;
-  padding-bottom: 5px;
-}
-
-.menu_activites
-{
-  order: 3;
-}
-
-.hebergements_activites a:hover
-{
-    text-decoration: underline 2px #0065FC;
-}
-
-/* Header */
-header
-{
-  width: 17em;
-}
-
-header h2
-{
-  font-size: 0.8em;
-}
-
-/* Responsive filtres */
-.filtres
-{
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.filtres_bouton
-{
-  margin-bottom: 0.4em;
-}  
-/* Reponsive hébergements + populaires */
-.bloc_hebergements_populaires
-{
-  flex-direction: column-reverse;
-}
-
-.hebergements_et_nomdeville
-{
-background-color: white;
-height: 100%;
-width: 80%;
-margin-bottom: 2em;
-}
-
-.carte_hebergements
-{
-  height: 13em;
-  box-shadow: 0px 3px 3px #F2F2F2;
-  margin-bottom: 1em;
-}
-
-.ligne_hebergements
-{
-  flex-direction: column;
-  margin-left: 0em;
-}
-
-.ligne_hebergements2
-{
-  flex-direction: column;
-  margin-left: 0em;
-}
-
-
-.les_populaires
-{
-  width: 22%;
-  border-radius: 0em;
-  margin-left: 0;
-}
-/* Fin Reponsive hébergements + populaires */
-
-/* Reponsive section activités */
-.activites_marseille
-{
-  flex-direction: column;
-}
-
-.carte_vieux_port
-{
-  width: 19em;
-  height: 8em;
-}
-
-.carte_vieux_port img
-{
-  width: 19em;
-  height: 5em;
-}
-
-.carte_pomegues
-{
-  width: 19em;
-  height: 8em;
-}
-
-.carte_pomegues img
-{
-  width: 19em;
-  height: 5em;
-}
-
-.carte_frioul
-{
-  width: 19em;
-  height: 8em;
-}
-
-  .carte_frioul img
+  .bloc_hebergements_populaires
   {
-    width: 19em;
-    height: 5em;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .les_populaires
+  {
+    height: 100%;
+    width: 25%;
+  }
+
+  .carte_populaires
+  {
+    height: 9em;
+    width: 95%;
   }
   
-  .carte_calanques
+  .hebergements_et_nomdeville
   {
-    width: 19em;
-    height: 8em;
+    justify-content: flex-start;
+    background-color: white;
+    height: 130em;
+    width: 30%;
+    border: solid 1px black;
   }
 
-  .carte_calanques img
+  .ligne_hebergements
   {
-    width: 19em;
-    height: 5em;
-  }
-
-  .carte_notre_dame
-  {
-    width: 19em;
-    height: 8em;
-  }
-
-  .carte_notre_dame img
-  {
-    width: 19em;
-    height: 5em;
-  }
-
-  .carte_longchamp
-  {
-    width: 19em;
-    height: 8em;
-  }
-
-  .carte_longchamp img
-  {
-    width: 19em;
-    height: 5em;
-  }
-
-  .nomarge
-  {
-    margin-left: 0;
-    margin-top: 2em;
-    margin-bottom: 0em;
-  }
-  /* Fin reponsive section activités */
-
-  /* Responsive footer */
-  footer
-  {
-    margin-left: 2em;
-    margin-top: 2em;
     flex-direction: column;
     justify-content: flex-start;
-    width: 35%;
-    height: 29em;
+    height: 48%;
+    width: 95%;
+    border: solid 1px black;
+    margin-bottom: -10em;
   }
 
-  .marge
-  {
-    padding-top: 1em;
-    width: 60%;
+  .carte_hebergements
+  { 
+    height: 25%;
+    width: 100%;
+    margin-bottom: 2em;
+    box-shadow: 0px 5px 5px #F2F2F2;
   }
 
-  footer h2
+  .bouton_afficher
   {
-    font-size: 1.3em;
+    height: 2%;
+    margin-top: 0em;
+    border: solid 1px red;
   }
 
-  footer a
+  .activites_marseille
   {
-    width: 20em;
+    flex-direction: column;
+    align-items: center;
+    height: 140em;
+    width: 55%;
+    border: solid 1px black;
+  }
+
+  .responsive__mobile
+  {
+    height: 30%;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 0em;
+  }
+  
+  .colonne_2
+  {
+    justify-content: flex-start;
+    margin-bottom: 0em;
+    border: solid 1px black;
+  }
+
+  .carte_vieux_port
+  {
+    height: 9%;
+    width: 81%;
+  }
+
+  .carte_vieux_port img 
+  {
+    height: 75%;
+  }
+
+  .carte_calanques
+  {
+    height: 9%;
+    width: 80%;
+    margin-left: 0em;
+  }
+
+  .carte_calanques img 
+  {
+    height: 75%;
+  }
+
+  .colonne_4
+  {
+    justify-content: flex-start;
+    margin-bottom: 0em;
+  }
+
+  .nom_activites
+  {
+    align-self: center;
     font-size: 1.1em;
   }
-  /* Fin Responsive footer */
 
-  .titre_disponibilites
+  footer
   {
-    width: 35%;
-    font-size: 1em;
+    flex-direction: column;
+    height: 30em;
+    width: 100%;
   }
 
-  .filtres
+  footer section
   {
-    display: flex;
-    margin-bottom: 1em;
+    height: 30%
   }
-
-  .reponsiv_align
-  {
-    align-self: flex-end;
-  }
-}
-
-@media all and (max-width: 1630px)
-{
-
 }
