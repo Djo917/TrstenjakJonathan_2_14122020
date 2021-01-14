@@ -619,8 +619,17 @@ footer section
   .menu_navigation
   {
     flex-direction: row-reverse;
-    justify-content: flex-end;
-    flex-wrap: wrap;
+    border: solid 1px black;
+  }
+
+  .hebergements_activites
+  {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    width: 30%;
+    position: absolute;
+    right: 60%;
   }
 
   .inscription
@@ -629,6 +638,7 @@ footer section
   }
   .link__logo
   {
+    position: relative;
     right: 77%;
   }
 
