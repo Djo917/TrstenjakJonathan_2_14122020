@@ -8,40 +8,20 @@
 body
 {
   font-family: 'raleway';
+  margin-left: 0em;
 }
 
 .largeur
 {
   max-width: 1280px;
-  min-width: 400px;
-  margin: auto;
+  min-width: 375px;
 }
 
 /* Menu de navigation */
 
-.hebergements_activites a:hover
-{
-  border-top: solid 1px #0065FC;
-  padding-top: 0.8em;
-}
-
-.hebergements_activites a
-{
-  padding: 20px 25px 25px 20px;
-}
-
-
-.menu_navigation
-{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-}
 
 .menu_navigation a
 {
-	margin-right: 4em;
 	text-decoration: none;
 }
 
@@ -98,7 +78,6 @@ form
 
 .champ
 {
-	width: 13.5em;
 	height: 2.47em;
 	border: solid 1px;
 	border-top-color: #F2F2F2;
@@ -192,15 +171,11 @@ form
 
 .centrage
 {
-	display: flex;
-	align-items: center;
 	background-color: white;
 	color: #0065FC;
-	border: solid 2px #F2F2F2;
-	border-radius: 20px;
-	padding: 0.8em;
-	height: 0.4em;
-	margin-right: 1em;
+	border: solid 2px red;
+	border-radius: 50%;
+	padding: 0.7em;
 }
 
 .titre_disponibilites
@@ -255,7 +230,6 @@ form
 
 .descriptif_chambre
 {
-  display: flex;
   flex-direction: column;
   width: 100%;
   padding-left: 1em;
@@ -303,7 +277,6 @@ form
 {
   background-color: #F2F2F2;
   width: 25%;
-  height: 100%;
   border-radius: 1em 1em 1em 1em;
 }
 
@@ -318,10 +291,8 @@ form
 
 .carte_populaires /* Fond blanc contenant les img + texte */
 {
-  display: flex;
   background-color: white;
   height: 24%;
-  width: 100%;
   border-radius: 1em;
   margin-bottom: 2.5em;
   text-decoration: none;
@@ -345,7 +316,6 @@ form
 
 .descriptif_populaires
 {
-  height: 20%;
 	font-size: 0.7em;
   color: black;
   margin-left: 14em;
@@ -355,7 +325,6 @@ form
 .descriptif_populaires p
 {
   font-size: 1.2em;
-  margin-bottom: 0em;
 }
 
 .etoiles_populaires
@@ -376,25 +345,16 @@ form
 
 /* Activités à Marseille */
 
-.titre_activites
-{
-  max-width: 1280px;
-  margin: auto;
-  font-size: 1.3em;
-  color: black;
-}
 
 .activites_marseille
 {
   display: flex;
   margin: auto;
-  height: 40em;
 }
 
 .carte_vieux_port
 {
   background-color: white;
-  height: 90%;
   width: 25%;
   border-radius: 1.5em;
   box-shadow: 0px 5px 5px #F2F2F2;
@@ -418,7 +378,6 @@ form
   color: black;
   font-size: 1.3em;
   margin-left: 0.7em;
-  font-weight: bold;
 }
 
 .colonne_2
@@ -426,9 +385,7 @@ form
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90%;
   width: 25%;
-  margin-left: 2em;
 }
 
 .carte_pomegues
@@ -471,7 +428,6 @@ form
   height: 90%;
   width: 25%;
   border-radius: 1.5em;
-  margin-left: 2em;
   box-shadow: 0px 5px 5px #F2F2F2; 
 }
 
@@ -490,7 +446,6 @@ form
   justify-content: space-between;
   height: 90%;
   width: 20%;
-  margin-left: 2em;
 }
 
 .carte_notre_dame
@@ -531,8 +486,6 @@ form
 
 footer
 {
-  width: 90%;
-	height: 13em;
 	display: flex;
 	justify-content: space-between;
   background-color: #F2F2F2;
@@ -574,24 +527,46 @@ footer section
 
 @media screen and (max-width: 700px)
 {
-  .menu_navigation
+  .link__logo
   {
-    flex-direction: row-reverse;
+    position: relative;
+    left: 10%;
+  }
+
+  .inscription
+  {
+    position: absolute;
+    left: 77%;
+    top: 2.5%;
   }
 
   .hebergements_activites
   {
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: absolute;
-    right: 60%;
+    margin: auto;
   }
 
-  .link__logo
+  .hebergements_activites a
   {
-    position: relative;
-    right: 77%;
+    padding: 20px 25px 15px 60px;
+  }
+
+  .bouton_hebergements
+  {
+    border-bottom: solid 1px grey;
+    width: 50%;
+  }
+
+  .menu_activites
+  {
+    border-bottom: solid 1px grey;
+    width: 50%;
+  }
+
+  .highlight:hover
+  {
+    border-bottom: solid 2px #0065FC;
+    padding-bottom: 0.8em;
   }
 
   .bouton_rechercher
@@ -602,13 +577,11 @@ footer section
   .bouton_rechercher--font
   {
     border: 0px white;
-	  border-radius: 0.8em 0.8em 0.8em 0.8em;
+	  border-radius: 30%;
 	  background-color: #0065FC;
-	  font-family: 'raleway', sans-serif;
 	  color: white;
 	  height: 2.45em;
     width: 3em;
-    font-weight: bold;
   }
 
   .loupe 
@@ -641,14 +614,12 @@ footer section
 
   .les_populaires
   {
-    height: 100%;
     width: 100%;
     border-radius: 0px;
   }
 
   .carte_populaires
   {
-    height: 9em;
     width: 90%;
     margin-left: 1em;
   }
@@ -678,102 +649,60 @@ footer section
 
   .bouton_afficher
   {
-    height: 2%;
     margin-top: 0em;
   }
 
   .activites_marseille
   {
     flex-direction: column;
-    align-items: center;
-    height: 140em;
-    width: 100%;
-    margin-bottom: -45em;
-  }
-
-  .responsive__mobile
-  {
-    height: 30%;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 0em;
-  }
-  
-  .colonne_2
-  {
     justify-content: space-around;
-    margin-bottom: 0em;
-    height: 40em;
-    width: 100%;
-  }
-
-  .carte_pomegues
-  {
-    margin-bottom: -10em;
   }
 
   .carte_vieux_port
   {
-    height: 9%;
     width: 100%;
-    margin-bottom: -3em;
   }
 
-  .carte_vieux_port img 
+  .carte_vieux_port img
   {
     height: 75%;
   }
 
-  .carte_calanques
-  {
-    height: 9%;
-    width: 100%;
-    margin-top: -3em;
-    margin-bottom: -2em;
-    margin-left: 0em;
-  }
-
-  .carte_calanques img 
+  .carte_calanques img
   {
     height: 75%;
+  }
+  .responsive__mobile
+  {
+    height: 12em;
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+
+  .colonne_2
+  {
+    width: 100%;
   }
 
   .colonne_4
   {
-    justify-content: space-around;
-    height: 40em;
     width: 100%;
-  }
-
-  .carte_longchamp
-  {
-    margin-top: -8em;
   }
 
   .nom_activites
   {
-    align-self: center;
     font-size: 1.1em;
   }
 
   footer
   {
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    height: 30em;
-    width: 100%;
+    padding: 1em;
   }
 
   footer section
   {
     height: 35%;
     width: 100%;
-  }
-
-  .marge
-  {
-    margin-left: 3em;
   }
 }
