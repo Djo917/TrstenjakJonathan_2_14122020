@@ -167,13 +167,14 @@ form
 {
 	display: flex;
   align-items: center;
+  margin-bottom: 1em;
 }
 
 .centrage
 {
 	background-color: white;
 	color: #0065FC;
-	border: solid 2px red;
+	border: solid 2px #DEEBFF;
 	border-radius: 50%;
 	padding: 0.7em;
 }
@@ -221,7 +222,6 @@ form
 .carte_hebergements img
 {
   object-fit: cover;
-  height: 60%;
   width: 97%;
   border-radius: 1.1em 1.1em 0em 0em;
   margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
@@ -292,7 +292,6 @@ form
 .carte_populaires /* Fond blanc contenant les img + texte */
 {
   background-color: white;
-  height: 24%;
   border-radius: 1em;
   margin-bottom: 2.5em;
   text-decoration: none;
@@ -301,13 +300,14 @@ form
 .carte_populaires a
 {
   text-decoration: none;
+  display: flex;
 }
 
 .carte_populaires img
 {  
   width: 40%;
   border-radius: 1em 0em 0em 1em;
-  height: 95%;
+  height: 9em;
   object-fit: cover;
   padding-top: 0.2em;
   padding-left: 0.2em;
@@ -316,10 +316,10 @@ form
 
 .descriptif_populaires
 {
+  flex-direction: column;
 	font-size: 0.7em;
   color: black;
-  margin-left: 14em;
-  margin-top: -14em;
+  margin-left: 0.7em;
 }
 
 .descriptif_populaires p
@@ -329,7 +329,6 @@ form
 
 .etoiles_populaires
 {
-  height: 20%;
   color: #0065FC;
   font-size: 1.2em;
   margin-top: 30%;
@@ -337,10 +336,9 @@ form
 
 .etoiles_populaires--specifique
 {
-  height: 20%;
   color: #0065FC;
   font-size: 1.2em;
-  margin-top: 22%; 
+  margin-top: 15%; 
 }
 
 /* Activités à Marseille */
@@ -530,13 +528,13 @@ footer section
   .link__logo
   {
     position: relative;
-    left: 10%;
+    left: 5%;
   }
 
   .inscription
   {
-    position: absolute;
-    left: 77%;
+    position: relative;
+    left: 50%;
     top: 2.5%;
   }
 
@@ -631,6 +629,11 @@ footer section
     margin-bottom: 2em;
   }
 
+  .hebergements_et_nomdeville h2
+  {
+    margin-left: 0.3em;
+  }
+
   .ligne_hebergements
   {
     flex-direction: column;
@@ -652,6 +655,7 @@ footer section
     margin-top: 0em;
   }
 
+  
   .activites_marseille
   {
     flex-direction: column;
