@@ -189,16 +189,11 @@ form
 .bloc_hebergements_populaires
 {
   display: flex;
-  justify-content: space-between;
-  height: 167em;
 }
 
 /* Section Hébergements */
 .hebergements_et_nomdeville
 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
   background-color: #F2F2F2;
   border-radius: 1em 1em 1em 1em;
 }
@@ -206,16 +201,16 @@ form
 .ligne_hebergements
 {
   display: flex;
-  justify-content: space-between;
-  height: 70em;
-  width: 95%; 
+  margin-left: 1em;
+  margin-bottom: 2em;
+  width: 97%; 
 }
 
 .carte_hebergements /* Fond blanc contenant les img + texte */
 {
   background-color: white;
-  height: 80%;
   width: 35%;
+  margin-left: 1em;
   border-radius: 1.1em;
 }
 
@@ -223,6 +218,7 @@ form
 {
   object-fit: cover;
   width: 97%;
+  height: 10em;
   border-radius: 1.1em 1.1em 0em 0em;
   margin-top: 0.2em; /* Centre l'image au milieu du bloc supp */
   margin-left: 0.3em;
@@ -230,9 +226,8 @@ form
 
 .descriptif_chambre
 {
-  flex-direction: column;
-  width: 100%;
   padding-left: 1em;
+  margin-bottom: 0.7em;
 }
 
 .descriptif_chambre h2
@@ -268,7 +263,6 @@ form
 {
   font-weight: bold;
   font-size: 1.4em;
-  margin-top: -2em;
 }
 
 /* Les plus populaires */
@@ -276,8 +270,12 @@ form
 .les_populaires
 {
   background-color: #F2F2F2;
-  width: 25%;
   border-radius: 1em 1em 1em 1em;
+  margin-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 115em;
 }
 
 .titre_populaires
@@ -293,8 +291,9 @@ form
 {
   background-color: white;
   border-radius: 1em;
-  margin-bottom: 2.5em;
   text-decoration: none;
+  width: 90%;
+  margin-left: 1em;
 }
 
 .carte_populaires a
@@ -338,7 +337,7 @@ form
 {
   color: #0065FC;
   font-size: 1.2em;
-  margin-top: 15%; 
+  margin-top: 20%; 
 }
 
 /* Activités à Marseille */
@@ -347,7 +346,7 @@ form
 .activites_marseille
 {
   display: flex;
-  margin: auto;
+  justify-content: space-between;
 }
 
 .carte_vieux_port
@@ -356,6 +355,7 @@ form
   width: 25%;
   border-radius: 1.5em;
   box-shadow: 0px 5px 5px #F2F2F2;
+  border: solid 1px black;
 }
 
 .carte_vieux_port img
@@ -369,6 +369,7 @@ form
 .lien_activites
 {
   text-decoration: none;
+
 }
 
 .nom_activites
@@ -382,7 +383,6 @@ form
 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 25%;
 }
 
@@ -423,7 +423,6 @@ form
 .carte_calanques
 {
   background-color: white;
-  height: 90%;
   width: 25%;
   border-radius: 1.5em;
   box-shadow: 0px 5px 5px #F2F2F2; 
@@ -431,7 +430,7 @@ form
 
 .carte_calanques img
 {
-  height: 85%;
+  height: 80%;
   width: 100%;
   object-fit: cover;
   border-radius: 1.5em 1.5em 0em 0em;
@@ -442,7 +441,6 @@ form
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 90%;
   width: 20%;
 }
 
@@ -607,19 +605,20 @@ footer section
   .bloc_hebergements_populaires
   {
     flex-direction: column-reverse;
-    width: 100%;
   }
 
   .les_populaires
   {
     width: 100%;
     border-radius: 0px;
+    margin-left: 0em;
   }
 
   .carte_populaires
   {
     width: 90%;
     margin-left: 1em;
+    margin-bottom: 1em;
   }
   
   .hebergements_et_nomdeville
@@ -639,7 +638,7 @@ footer section
     flex-direction: column;
     justify-content: flex-start;
     width: 95%;
-    margin-bottom: -10em;
+    margin-bottom: 0em;
   }
 
   .carte_hebergements
@@ -648,13 +647,8 @@ footer section
     width: 100%;
     margin-bottom: 2em;
     box-shadow: 0px 5px 5px #F2F2F2;
+    margin-left: 0em;
   }
-
-  .bouton_afficher
-  {
-    margin-top: 0em;
-  }
-
   
   .activites_marseille
   {
