@@ -19,6 +19,27 @@ body
 
 /* Menu de navigation */
 
+.menu_navigation
+{
+  display: flex;
+}
+
+.inscription
+{
+  position: relative;
+  left: 83%;
+}
+
+.hebergements_activites
+{
+  position: relative;
+  left: 55%;
+}
+
+.highlight 
+{
+  margin-left: 2em;
+}
 
 .menu_navigation a
 {
@@ -347,15 +368,15 @@ form
 {
   display: flex;
   justify-content: space-between;
+  height: 35em;
 }
 
 .carte_vieux_port
 {
   background-color: white;
-  width: 25%;
+  width: 23%;
   border-radius: 1.5em;
   box-shadow: 0px 5px 5px #F2F2F2;
-  border: solid 1px black;
 }
 
 .carte_vieux_port img
@@ -383,7 +404,8 @@ form
 {
   display: flex;
   flex-direction: column;
-  width: 25%;
+  justify-content: space-between;
+  width: 23%;
 }
 
 .carte_pomegues
@@ -423,7 +445,7 @@ form
 .carte_calanques
 {
   background-color: white;
-  width: 25%;
+  width: 23%;
   border-radius: 1.5em;
   box-shadow: 0px 5px 5px #F2F2F2; 
 }
@@ -441,7 +463,7 @@ form
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 20%;
+  width: 23%;
 }
 
 .carte_notre_dame
@@ -521,8 +543,12 @@ footer section
 
 /* Reponsive Mobile */
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 450px)
 {
+  .menu_navigation
+  {
+    display: block;
+  }
   .link__logo
   {
     position: relative;
@@ -538,6 +564,8 @@ footer section
 
   .hebergements_activites
   {
+    position: initial;
+    left: initial;
     display: flex;
     margin: auto;
   }
@@ -654,6 +682,7 @@ footer section
   {
     flex-direction: column;
     justify-content: space-around;
+    height: initial;
   }
 
   .carte_vieux_port
