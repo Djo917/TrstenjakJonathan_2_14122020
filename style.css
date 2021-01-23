@@ -568,7 +568,7 @@ footer section
 
 /* Reponsive Mobile */
 
-@media screen and (max-width: 450px)
+@media screen and (max-width: 800px)
 {
   .menu_navigation
   {
@@ -759,6 +759,115 @@ footer section
   footer section
   {
     height: 35%;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px)
+{
+  .ligne_hebergements
+  {
+    flex-direction: column;
+    margin-left: 0em;
+  }
+
+  .carte_hebergements
+  {
+    width: initial;
+    margin-bottom: 1em;
+  }
+
+  .test
+  {
+    display: flex;
+  }
+
+  .les_populaires
+  {
+    width: initial;
+    height: 40em;
+  }
+}
+
+@media screen and (min-width: 801px) and (max-width: 860px )
+{
+  .bloc_hebergements_populaires
+  {
+    flex-direction: column;
+  }
+
+  .hebergements_et_nomdeville
+  {
+    width: 50%;
+  }
+
+  .ligne_hebergements
+  {
+    margin: initial;
+
+  }
+
+  .les_populaires
+  {
+    margin-top: 1em;
+    width: 52%;
+    margin-left: initial;
+  }
+
+  .test 
+  {
+    display: block;
+  }
+
+  .activites_marseille
+  {
+    flex-direction: column;
+    height: initial;
+    justify-content: space-between;
+  }
+
+  .responsive__mobile
+  {
+    height: 15em;
+  }
+
+  .carte_vieux_port
+  {
+    width: 50%;
+  }
+
+  .carte_vieux_port img 
+  {
+    height: 75%;
+  }
+
+  .colonne_2
+  {
+    width: 50%;
+  }
+
+  .carte_calanques
+  {
+    width: 50%;
+  }
+
+  .carte_calanques img 
+  {
+    height: 75%
+  }
+
+  .colonne_4
+  {
+    width: 50%;
+  }
+
+  .carte_notre_dame
+  {
+    width: 100%;
+  }
+
+  .carte_longchamp
+  {
     width: 100%;
   }
 }
