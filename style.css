@@ -13,6 +13,7 @@ body
 
 .largeur
 {
+  margin: auto;
   max-width: 1280px;
   min-width: 375px;
 }
@@ -22,9 +23,10 @@ body
 .menu_navigation
 {
   display: flex;
+  margin-top: 2em;
 }
 
-.inscription
+.button__subscribe
 {
   position: relative;
   left: 83%;
@@ -44,6 +46,12 @@ body
 .menu_navigation a
 {
 	text-decoration: none;
+}
+
+.highlight:hover
+{
+  border-top: solid 2px #0065FC;
+  padding-top: 0.8em;
 }
 
 .couleur_nav
@@ -66,7 +74,8 @@ body
 header h1
 {
 	font-size: 1.2em;
-	font-weight: bold;
+  font-weight: bold;
+  margin-bottom: -0.5em;
 }
 
 header h2
@@ -133,6 +142,11 @@ form
 
 /* Filtres */
 
+.titre_filtres
+{
+  margin-right: 1em;
+}
+
 .filtres_responsive
 {
   display: flex;
@@ -197,13 +211,14 @@ form
 	color: #0065FC;
 	border: solid 2px #DEEBFF;
 	border-radius: 50%;
-	padding: 0.7em;
+  padding: 0.7em;
 }
 
 .titre_disponibilites
 {
   font-size: 1.3em;
   font-weight: normal;
+  margin-left: 1em;
 }
 
 /* Bloc hebergements et populaires */
@@ -213,10 +228,17 @@ form
 }
 
 /* Section Hébergements */
+
+.title_hebergements
+{
+  padding-left: 1.6em;
+}
 .hebergements_et_nomdeville
 {
   background-color: #F2F2F2;
   border-radius: 1em 1em 1em 1em;
+  padding-bottom: 1.5em;
+  padding-right: 1em;
 }
 
 .ligne_hebergements
@@ -284,6 +306,7 @@ form
 {
   font-weight: bold;
   font-size: 1.4em;
+  padding-left: 1.6em;
 }
 
 /* Les plus populaires */
@@ -369,6 +392,7 @@ form
   display: flex;
   justify-content: space-between;
   height: 35em;
+  padding-bottom: 2em;
 }
 
 .carte_vieux_port
@@ -507,11 +531,12 @@ footer
 	display: flex;
 	justify-content: space-between;
   background-color: #F2F2F2;
+  padding: 2em 5em 2em 5em;
 }
 
 footer section
 {
-	width: 33.33%;
+  width: 33.33%;
 }
 
 .a_propos a
@@ -548,6 +573,7 @@ footer section
   .menu_navigation
   {
     display: block;
+    margin: initial;
   }
   .link__logo
   {
@@ -555,19 +581,15 @@ footer section
     left: 5%;
   }
 
-  .inscription
+  .button__subscribe
   {
-    position: relative;
-    left: 50%;
-    top: 2.5%;
+    width: 30%;
   }
 
   .hebergements_activites
   {
-    position: initial;
-    left: initial;
     display: flex;
-    margin: auto;
+    position: static;
   }
 
   .hebergements_activites a
@@ -654,11 +676,12 @@ footer section
     justify-content: flex-start;
     background-color: white;
     margin-bottom: 2em;
+    padding: initial;
   }
 
-  .hebergements_et_nomdeville h2
+  .title_hebergements
   {
-    margin-left: 0.3em;
+    padding-left: 1em;
   }
 
   .ligne_hebergements
@@ -667,6 +690,7 @@ footer section
     justify-content: flex-start;
     width: 95%;
     margin-bottom: 0em;
+    margin-left: 0em;
   }
 
   .carte_hebergements
@@ -674,8 +698,13 @@ footer section
     height: 25%;
     width: 100%;
     margin-bottom: 2em;
-    box-shadow: 0px 5px 5px #F2F2F2;
     margin-left: 0em;
+    box-shadow: 0px 5px 5px #F2F2F2;
+  }
+
+  .bouton_afficher
+  {
+    padding-left: 0em;
   }
   
   .activites_marseille

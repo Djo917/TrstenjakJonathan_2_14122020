@@ -17,7 +17,9 @@
             <a href="index.html" class="link__logo">
                 <img class="logo_reservia" src="images/logo/Reservia@3x.png" alt="logo de reservia" />
             </a>
-                <a class="inscription couleur_nav" href="#">S'inscrire</a>
+            <div class="button__subscribe">
+                <a class="inscription couleur_nav highlight" href="#">S'inscrire</a>
+            </div>
             <div class="hebergements_activites">
                 <a class="bouton_hebergements couleur_nav highlight" href="#hebergements">Hébergements</a>
                 <a class="menu_activites highlight" href="#activites">Activités</a>
@@ -83,8 +85,8 @@
 
         <!--Code regroupant les séctions hébergements ET populaires-->
         <div class="bloc_hebergements_populaires">
-            <section class="hebergements_et_nomdeville">
-                <h2>Hébergements à Marseille</h2>
+            <section id="hebergements" class="hebergements_et_nomdeville">
+                <h2 class="title_hebergements">Hébergements à Marseille</h2>
                 <div class="ligne_hebergements">
                     <article class="carte_hebergements titre_de_la_chambre">
                         <a href="#">
@@ -264,7 +266,7 @@
 
         <!--Début de la section activités associées à la ville-->
         <h2 class="titre_activites">Activités à Marseille</h2>
-        <aside class="activites_marseille">
+        <aside id="activites" class="activites_marseille">
             <article class="carte_vieux_port responsive__mobile">
                 <a href="#" class="lien_activites">
                     <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
