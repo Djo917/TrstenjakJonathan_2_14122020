@@ -25,13 +25,14 @@ body
   display: flex;
   justify-content: flex-end;
   margin-top: 2em;
+  position: relative; 
 }
 
 .link__logo
 {
   position: absolute;
   left: 0em;
-  top: 1em;
+  bottom: 0em;
   order: 1;
 }
 
