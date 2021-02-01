@@ -592,6 +592,7 @@ footer section
     display: block;
     margin: initial;
     align-items: flex-end;
+    width: 67%;
   }
 
   .link__logo
@@ -604,22 +605,35 @@ footer section
   .button__subscribe {
     position: relative;
     bottom: 2em;
-    right: 1em;
+    right: 7em;
     display: flex;
     justify-content: flex-end;
     font-weight: bold;
   }
 
-  .titre_populaires
+  header
   {
-    justify-content: space-between;
     padding-left: 1em;
-    padding-right: 2.8em;
+  }
+
+  .formulaire_de_recherche
+  {
+    padding-left: 1em;
+  }
+
+  .filtres
+  {
+    padding-left: 1em;
   }
 
   .hebergements_activites
   {
     display: flex;
+  }
+
+  .disponibilites
+  {
+    padding-left: 1em;
   }
 
   .hebergements_activites a
@@ -737,7 +751,12 @@ footer section
 
   .bouton_afficher
   {
-    padding-left: 0em;
+    padding-left: 1em;
+  }
+
+  .titre_activites
+  {
+    padding-left: 1em;
   }
   
   .activites_marseille
@@ -916,7 +935,12 @@ footer section
   }
 }
 
-@media screen and (max-width: 525px)
+@media screen and (max-width: 700px)
 {
-  
+  .menu_navigation
+  {
+    width: 100%;
+    position: relative;
+    right: 1em;
+  }  
 }
