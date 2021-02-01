@@ -7,15 +7,10 @@
 
 body
 {
-  font-family: 'raleway', sans-serif;
-  margin-left: 0em;
-}
-
-.largeur
-{
   margin: auto;
   max-width: 1280px;
   min-width: 375px;
+  font-family: 'raleway', sans-serif;
 }
 
 /* Menu de navigation */
@@ -707,7 +702,6 @@ footer section
   .carte_populaires
   {
     width: 90%;
-    margin-left: 1em;
     margin-bottom: 1em;
   }
   
@@ -738,7 +732,6 @@ footer section
     height: 25%;
     width: 100%;
     margin-bottom: 2em;
-    margin-left: 0em;
     box-shadow: 0px 5px 5px #F2F2F2;
   }
 
