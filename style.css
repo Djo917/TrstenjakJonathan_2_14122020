@@ -713,6 +713,13 @@ footer section
     margin-left: 0em;
   }
 
+  .titre_populaires
+  {
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 3em;
+  }
+
   .carte_populaires
   {
     width: 90%;
@@ -764,6 +771,7 @@ footer section
     flex-direction: column;
     justify-content: space-around;
     height: initial;
+    padding: 1em;
   }
 
   .carte_vieux_port
@@ -943,4 +951,31 @@ footer section
     position: relative;
     right: 1em;
   }  
+}
+
+@media screen and (max-width: 500px)
+{
+  .button__subscribe
+  {
+    position: relative;
+    right: 0.5em;
+  }
+
+  .titre_populaires
+  {
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1.5em;
+  }
+
+  .hebergements_et_nomdeville
+  {
+    padding-right: 1em;
+  }
+
+  .menu_navigation
+  {
+    position: relative;
+    right: 0em;
+  }
 }
