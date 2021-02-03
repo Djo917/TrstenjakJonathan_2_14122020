@@ -935,8 +935,26 @@ footer section
 {
   .button__subscribe
   {
-      position: relative;
-      right: 0.5em;
+    position: relative;
+    right: 0.5em;
+  }
+
+  .titre_populaires
+  {
+    justify-content: space-between;
+    padding-left: 1em;
+    padding-right: 1.5em;
+  }
+
+  .hebergements_et_nomdeville
+  {
+    padding-right: 1em;
+  }
+
+  .menu_navigation
+  {
+    position: relative;
+    right: 0em;
   }
 }
 
