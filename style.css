@@ -319,10 +319,8 @@ form
   background-color: #F2F2F2;
   border-radius: 1em 1em 1em 1em;
   margin-left: 1em;
-  display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 115em;
 }
 
 .titre_populaires
@@ -341,6 +339,7 @@ form
   text-decoration: none;
   width: 90%;
   margin-left: 1em;
+  margin-bottom: 2em;
 }
 
 .carte_populaires a
