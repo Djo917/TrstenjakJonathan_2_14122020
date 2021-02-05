@@ -242,6 +242,7 @@ form
   border-radius: 1em 1em 1em 1em;
   padding-bottom: 1.5em;
   padding-right: 1em;
+  flex: 7;
 }
 
 .ligne_hebergements
@@ -319,8 +320,10 @@ form
   background-color: #F2F2F2;
   border-radius: 1em 1em 1em 1em;
   margin-left: 1em;
+  display: flex;
   flex-direction: column;
   justify-content: space-around;
+  flex: 3;
 }
 
 .titre_populaires
@@ -385,6 +388,7 @@ form
   font-size: 1.2em;
   margin-top: 20%; 
 }
+
 
 /* Activités à Marseille */
 
